@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Title -->
+    <title>@ViewBag.Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+
+    <!--Eklenen-->
+    @RenderSection("styles", required: false)
+    <!--Eklenen-->
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Assets/Js/jquery-ui.min.js"></script>
+    <script src="~/Assets/Js/snap.svg-min.js"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2015.1.616/jszip.min.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/kendo/2015.1.616/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/kendo/2015.1.616/kendo.aspnetmvc.min.js")"></script>
+    <script src="~/Scripts/kendo/2015.1.616/cultures/kendo.culture.tr-TR.min.js"></script>
+    <script src="~/Scripts/kendo/2015.1.616/messages/kendo.messages.tr-TR.min.js"></script>
+
+
+    @RenderSection("head", required: false)
+    <link href="@Url.Content("~/Content/kendo/2015.1.616/kendo.common.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2015.1.616/kendo.mobile.all.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2015.1.616/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2015.1.616/kendo.default.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/kendo/2015.1.616/kendo.dataviz.default.min.css")" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body class="page-header-fixed  pace-done small-sidebar">
+    @RenderBody()
+    <!--Eklenen-->
+    @RenderSection("Scripts", required: false)
+    <!--Eklenen-->
+    <!-- Javascripts -->
+    <script src="~/Assets/Js/jquery.blockui.js"></script>
+    <script src="~/Assets/Js/bootstrap.min.js"></script>
+    <script src="~/Assets/Js/jquery.slimscroll.min.js"></script>
+    <script src="~/Assets/Js/switchery.min.js"></script>
+    <script src="~/Assets/Js/jquery.uniform.min.js"></script>
+    <script src="~/Assets/Js/classie.js"></script>
+    <script src="~/Assets/Js/main.js"></script>
+    <script src="~/Assets/Js/waves.min.js"></script>
+    <script src="~/Assets/Js/jquery.waypoints.min.js"></script>
+    <script src="~/Assets/Js/jquery.counterup.min.js"></script>
+    <script src="~/Assets/Js/jquery.flot.min.js"></script>
+    <script src="~/Assets/Js/jquery.flot.time.min.js"></script>
+    <script src="~/Assets/Js/jquery.flot.symbol.min.js"></script>
+    <script src="~/Assets/Js/jquery.flot.resize.min.js"></script>
+    <script src="~/Assets/Js/jquery.flot.tooltip.min.js"></script>
+    <script src="~/Assets/Js/MetroJs.min.js"></script>
+    <script src="~/Assets/Js/modern.min.js"></script>
+
+</body>
+</html>
